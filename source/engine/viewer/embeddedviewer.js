@@ -125,6 +125,7 @@ export class EmbeddedViewer
             onLoadStart : () => {
                 this.canvas.style.display = 'none';
                 progressDiv = document.createElement ('div');
+                progressDiv.classList.add('progress');
                 progressDiv.innerHTML = Loc ('Loading model...');
                 this.parentElement.appendChild (progressDiv);
             },
