@@ -14917,9 +14917,9 @@ class EmbeddedViewer {
     this.modelLoader.LoadModel(inputFiles, settings, {
       onLoadStart: () => {
         this.canvas.style.display = 'none';
-        // progressDiv = document.createElement ('div');
+        progressDiv = document.createElement('div');
         // progressDiv.innerHTML = Loc ('Loading model...');
-        // this.parentElement.appendChild (progressDiv);
+        this.parentElement.appendChild(progressDiv);
       },
       onFileListProgress: (current, total) => {
       },
