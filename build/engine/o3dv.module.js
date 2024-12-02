@@ -14926,10 +14926,10 @@ class EmbeddedViewer {
       onFileLoadProgress: (current, total) => {
       },
       onImportStart: () => {
-        progressDiv.innerHTML = Loc('Importing model...');
+        // progressDiv.innerHTML = Loc('Importing model...');
       },
       onVisualizationStart: () => {
-        progressDiv.innerHTML = Loc('Visualizing model...');
+        // progressDiv.innerHTML = Loc('Visualizing model...');
       },
       onModelFinished: (importResult, threeObject) => {
         this.parentElement.removeChild(progressDiv);
